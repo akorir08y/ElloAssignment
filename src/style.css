@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body{
+    background-color: rgb(209,204,204);
+    font-family: 'Mulish' , Roboto; 
+}
+
+.templateContainer{
+    margin: 2% 0;
+}
+
+.heading{
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    font-style: oblique;
+    color: #28b8b8
+}
+
+.templateContainer > .searchInput_Container{
+    position: absolute;
+    left: 30%;
+    right:50%;
+    top: 5%;
+    margin-top: 20px;
+    width: 35%;
+    z-index: 3;
+    max-height: 100vh;
+    height:50vh;
+}
+.templateContainer > .searchInput_Container input{
+    padding: 10px;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    width: 100%;
+}
+
+.templateContainer > .searchInput_Container input:hover{
+    padding: 10px;
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid black;
+    width: 100%;
+}
+
+.templateContainer > .searchInput_Container input:active{
+    padding: 10px;
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid black;
+    width: 100%;
+}
+
+.search{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imager{
+    float: left;
+    margin: 5px;
+}
+
+.content{
+    float: right;
+    margin-right: 50px;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button{
+    float: right;
+    margin-top: -30px;
+    margin-bottom: 5px;
+    background-color: #53C2C2;
+    border:none;
+    border-radius:10px;
+    padding: 5px 15px;
+    color: white;
+}
+
+.button-add{
+    background-color: #5ACCCC;
+    border:none;
+    border-radius:10px;
+    padding: 5px 15px;
+    color: white;
+}
+
+.button-remove{
+    background-color: #F76434;
+    border:none;
+    border-radius:10px;
+    padding: 5px 15px;
+    color: white;
+}
+
+.templateContainer .template_Container{
+    position: relative;
+	width: 100%;
+	padding: 10px 20px;;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-gap: 30px;
+}
+
+.templateContainer .template_Container .template{
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
+}
+.templateContainer .template_Container .template img{
+    height: 150px;
+}
+
+.search-container{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin-left: 15px;
+    width: 100%;
+}
+
+.dropdown empty{
+    border: none;
+}
+
+.dropdown-row{
+    cursor: pointer;
+    margin: 2px 0;
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-row p{
+    font-size:14px;
+}
+
+.imaged{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.cards{
+    width: 300px;
+}
+
+/* To make a Responsive Design */
+@media screen and (max-width: 1024px){
+    .cards{
+        width: 250px;
+    }
+
+    .imager{
+        float: left;
+        margin: 5px;
+    }
+    
+    .content{
+        float: right;
+        text-align: left;
+        margin-top: -60px;
+        margin-bottom: 5px;
+        margin-left: 70px;      
+    }
+
+    .content p{
+        font-size: 9px;
+    }
+
+    .button{
+        float: right;
+        margin-top: -30px;
+        margin-bottom: 5px;
+        background-color: #53C2C2;
+        border:none;
+        border-radius:10px;
+        padding: 5px 15px;
+        color: white;
+        margin-right: -40px;
+        font-size: 9px;
+    }
+    
+
+    .dropdown{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        border: 1px solid grey;
+        margin-left: 15px;
+        width: 100%;
+    }
+
+    .dropdown-row{
+        cursor: pointer;
+        margin: 2px 0;
+        display: inline-block;
+        position: relative;
+    }
+
+    .imaged{
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    
+
+    .templateContainer > .searchInput_Container{
+        position: absolute;
+        left: 30%;
+        right:50%;
+        top: 5%;
+        margin-top: 20px;
+        width: 25%;
+        z-index: 3;
+        max-height: 100vh;
+        height:50vh;
+    }
+
+    .templateContainer .template_Container{
+        position: relative;
+        width: 100%;
+        padding: 10px 20px;;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .imager{
+        float: left;
+        margin: 5px;
+    }
+    
+    .content{
+        float: right;
+        text-align: left;
+        margin-top: -60px;
+        margin-bottom: 5px;
+        margin-left: 70px;      
+    }
+
+    .content p{
+        font-size: 9px;
+    }
+
+    .button{
+        float: right;
+        margin-top: -30px;
+        margin-bottom: 5px;
+        background-color: #53C2C2;
+        border:none;
+        border-radius:10px;
+        padding: 5px 15px;
+        color: white;
+        margin-right: -40px;
+        font-size: 9px;
+    }
+    
+
+    .dropdown{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        border: 1px solid grey;
+        margin-left: 15px;
+        width: 100%;
+    }
+
+    .dropdown-row{
+        cursor: pointer;
+        margin: 2px 0;
+        display: inline-block;
+        position: relative;
+    }
+
+    .imaged{
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .templateContainer > .searchInput_Container{
+        position: absolute;
+        left: 30%;
+        right:50%;
+        top: 5%;
+        margin-top: 20px;
+        width: 40%;
+        z-index: 3;
+        max-height: 100vh;
+        height:50vh;
+    }
+
+    .templateContainer .template_Container{
+        position: relative;
+        width: 100%;
+        padding: 10px 20px;;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .imager{
+        float: left;
+        margin: 5px;
+    }
+    
+    .content{
+        float: right;
+        text-align: left;
+        margin-top: -60px;
+        margin-bottom: 5px;
+        margin-left: 70px;      
+    }
+
+    .content p{
+        font-size: 9px;
+    }
+
+    .button{
+        float: right;
+        margin-top: -30px;
+        margin-bottom: 5px;
+        background-color: #53C2C2;
+        border:none;
+        border-radius:10px;
+        padding: 5px 15px;
+        color: white;
+        margin-right: -40px;
+        font-size: 9px;
+    }
+    
+
+    .dropdown{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        border: 1px solid grey;
+        margin-left: 15px;
+        margin-top: -10px;
+        width: 100%;
+    }
+
+    .dropdown-row{
+        cursor: pointer;
+        margin: 2px 0;
+        display: inline-block;
+        position: relative;
+    }
+
+    .imaged{
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .tabbed{
+        margin-top: 30px;
+    }
+
+    .templateContainer > .searchInput_Container{
+        position: absolute;
+        left: 18%;
+        right:50%;
+        top: 5%;
+        margin-top: 5px;
+        width: 65%;
+        z-index: 3;
+        max-height: 100vh;
+        height:10vh;
+    }
+
+    .templateContainer .template_Container{
+        position: relative;
+        width: 100%;
+        padding: 10px 20px;;
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-gap: 30px;
+    }
+}
